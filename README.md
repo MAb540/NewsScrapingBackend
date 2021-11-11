@@ -1,8 +1,6 @@
 # NewsScrapingBackend
 
 
-# projectLogin
-
 This is the Backend of News Scraping App that i have built.
 
 <h1>Getting Started</h1>
