@@ -1,0 +1,101 @@
+# GET http://localhost:5000/channels
+
+
+# POST http://localhost:5000/channels HTTP/1.1
+# Content-Type: application/json
+
+# {
+#     "records":[
+#         {
+#             "nameOfChannel":"Geo",
+#             "imgageOfChannel":"https://i.pinimg.com/originals/ac/5f/a7/ac5fa7237dfa4f8c443949102754f90e.png",
+#             "descriptionOfChannel":"Geo TV provides latest news, breaking news, urdu news from pakistan, world, sports, cricket, business, politics, health"
+#         }
+#         ,
+#         {
+#         "nameOfChannel":"Ary",
+#     "imgageOfChannel":"https://pbs.twimg.com/profile_images/1295363150930481152/v9h6Qsgn_400x400.jpg",
+#     "descriptionOfChannel":"ARY News is a Pakistani news channel committed to bring you latest Pakistan news & featured stories from around Pakistan & all over the world."
+# },
+# {
+#     "nameOfChannel":"Bol",
+#     "imgageOfChannel":"https://www.logolynx.com/images/logolynx/00/00f371986e6736a1354049e881a18a47.png",
+#     "descriptionOfChannel":" Pakistan Latest News Updates - Breaking News, News Headlines, World, Sports, Weather, Politics & Entertainment."
+# }
+ 
+     
+#     ]
+# }
+
+# GET http://localhost:5000/channels/Ary/allnews?page=1&limit=10
+
+
+# GET http://localhost:5000/news?page=1&limit=10
+
+# POST http://localhost:5000/api/signup HTTP/1.1
+# Content-Type: application/json
+
+# {
+#     "name":"testing",
+#     "email":"mab16992@gmail.com",
+#     "password":"mypass"
+# }
+
+
+# POST http://localhost:5000/api/email-activate HTTP/1.1
+# Content-Type: application/json
+
+# {
+#    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGVzdGluZyIsImVtYWlsIjoibWFiMTY5OTJAZ21haWwuY29tIiwicGFzc3dvcmQiOiJteXBhc3MiLCJpYXQiOjE2MjQxNzA4OTksImV4cCI6MTYyNDE3MjA5OX0.rWCwhtHWqNmWQbhvWItKYQT-_GYV8XJC9oX_W_PY788"
+# }
+
+# GET http://localhost:5000/api
+
+POST http://localhost:5000/api/signup HTTP/1.1
+Content-Type: application/json
+
+{
+  "username":"Ume",
+  "phoneNumber":"923113754051",
+  "password":"randomString"
+}
+
+
+# POST http://localhost:5000/api/login HTTP/1.1
+# Content-Type: application/json
+
+# {
+#   "username":"Umeum",
+#   "password":"@bleomessi"
+# }
+
+
+# POST http://localhost:5000/api/verify HTTP/1.1
+# Content-Type: application/json
+
+# {
+#   "username":"Umeum",
+#   "code": "969520"
+# }
+
+
+
+
+# GET http://localhost:5000/news/60ca1af08fe5532cb4998d72
+
+
+# POST http://localhost:5000/api/login HTTP/1.1
+# Content-Type: application/json
+
+# {
+#   "email":"mab16992@gmail.com",
+#   "password":"@bleomessi"
+# }
+
+# POST https://example.com/comments HTTP/1.1
+# Content-Type: application/xml
+# Authorization: token xxx
+
+# DELETE  http://localhost:5000/news/60ca1af08fe5532cb4998d72
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGQ4MWEzN2M4ZDYwNTFlYWMwZmQ4YzQiLCJuYW1lIjoiYWJjZCIsImVtYWlsIjoibWFiMTY5OTJAZ21haWwuY29tIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjI2MjAxODAwLCJleHAiOjE2MjYzNzQ2MDB9.aPRZLbrYicxJ71tNGCuAY_fWQ3o31JjvtAsV5pVX0wc
+
